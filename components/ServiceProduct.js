@@ -1,24 +1,18 @@
 export class ServiceProduct {
 
-  static allProducts = [];
-
   getProducts() {
     return fetch('./data/goods.json')
       .then(data => data.json())
       .then(data => {
         if (localStorage.getItem.products) {
-          this.allProducts = JSON.parse(localStorage.getItem('products'));
+          return JSON.parse(localStorage.getItem('products'));
         } else {
           localStorage.setItem('products', JSON.stringify(data));
-          this.allProducts = data;
         }
 
-        return this.allProducts;
+        return data;
       })
   }
-
-
-
 
   // getProducts(src) {
   //   fetch(src)

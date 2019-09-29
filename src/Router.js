@@ -10,5 +10,3 @@ export class Router {
     this.serviceProduct = new ServiceProduct(this);
   }
 }
-
-// const router = new Router();

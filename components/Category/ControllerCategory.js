@@ -12,8 +12,7 @@ export class ControllerCategory {
     this.model.getCategory(e);
   }
 
-  // sendProductsToRender(products) {
-  //   // this.view.render(products);
-  //   this.router.controllerProduct.sendProductsToRender(products);
-  // }
+  sendProductsToRender(products) {
+    this.router.controllerProduct.sendProductsToRender(products);
+  }
 }
