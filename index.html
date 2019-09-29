@@ -75,7 +75,8 @@
 
   <nav class="navbar navbar-expand-md mt-2 mb-4">
     <div class="container">
-      <!-- Render search field component here -->
+
+      <!-- Search input -->
       <form class="form-inline my-2 my-lg-0 justify-content-center w-100">
         <input class="form-control mr-sm-2 w-75" type="search" aria-label="Search">
         <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"><i class="fas fa-search "></i></button>
@@ -83,14 +84,15 @@
     </div>
   </nav>
 
-  <!-- Results (Pets rendering) -->
+  <!-- Main Content -->
   <div class="container" id="main-container">
     <div class="row">
+
       <!-- Sidebar (Search & Filters) -->
       <div id="sidebar" class="col-md-12 col-lg-3">
         <div class="container">
 
-          <!-- Filters -->
+          <!-- Sidebar Filters -->
           <h5 class="mb-3">Filters</h5>
           <form class="d-flex flex-column form-inline my-2 my-lg-0">
 
@@ -155,8 +157,9 @@
           </form>
         </div>
       </div>
+
       <!-- Results (Pets rendering) -->
-      <div id="products" class="row col-sm-12 col-lg-9 text-center justify-content-center"></div>
+      <div id="products" class="row col-sm-12 col-lg-9 text-center"></div>
 
     </div>
   </div>
